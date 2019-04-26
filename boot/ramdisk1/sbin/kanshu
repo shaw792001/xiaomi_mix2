@@ -1,0 +1,18 @@
+#!/system/bin/sh
+x=5000
+if [ $1 ]
+then
+x=$1
+fi
+sleep 5
+for i in $(seq 1 $x)
+do 
+echo $i
+#input tap 2159 500
+input tap 1079 500
+#input keyevent 24
+#input keyevent 25
+#input keyevent 27
+sleep 1
+done
+#https://blog.csdn.net/jlminghui/article/details/39268419

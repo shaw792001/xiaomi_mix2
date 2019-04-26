@@ -1,0 +1,4 @@
+busybox mount -o remount,rw rootfs / 2>/dev/null;
+busybox mount -o remount,rw -t auto /system 2>/dev/null;
+busybox mount -o remount,rw -t auto /data
+
